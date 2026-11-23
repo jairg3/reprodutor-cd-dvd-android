@@ -1,0 +1,37 @@
+# Gradle and local Android SDK configuration
+.gradle/
+.kotlin/
+**/build/
+.cxx/
+local.properties
+.idea/
+*.iml
+.vscode/
+
+# Local signing material and credentials
+.env
+.env.*
+*.jks
+*.keystore
+*.p12
+*.pfx
+*.pem
+*.key
+keystore.properties
+signing.properties
+[Kk][Ee][Yy][Dd][Bb].[Cc][Ff][Gg]
+
+# Build output, logs and local disc images
+*.apk
+*.aab
+*.aar
+*.jar
+!/gradle/wrapper/gradle-wrapper.jar
+*.log
+*.iso
+*.img
+*.vob
+*.VOB
+*.zip
+*.7z
+/third_party/discmount/app/src/main/cpp/libdvdcss/

@@ -1,0 +1,21 @@
+pluginManagement {
+    repositories {
+        google()
+        mavenCentral()
+        gradlePluginPortal()
+    }
+}
+
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+    }
+}
+
+rootProject.name = "ReprodutorDeCDEDVD"
+include(":app", ":discmount-core", ":discmount-backend")
+
+project(":discmount-core").projectDir = file("third_party/discmount/core")
+project(":discmount-backend").projectDir = file("third_party/discmount/app")
